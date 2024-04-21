@@ -1,0 +1,17 @@
+---
+const { width } = Astro.props;
+---
+
+<button
+  class=`mt-5 md:px-8 md:py-4 w-${width} py-[10px] bg-primary border-text border-2 my-3`
+  ><slot /></button
+>
+
+<style>
+  button {
+    transition: all 0.2s;
+  }
+  button:hover {
+    box-shadow: 6px 6px 0px 0px #0f0f0f8f;
+  }
+</style>

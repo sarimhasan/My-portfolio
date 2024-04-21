@@ -1,3 +1,8 @@
+---
+import { Image } from 'astro:assets';
+import Logo from '../assets/Logo.png';
+---
+
 <style>
   .mobile-nav-toggle {
     display: none;
@@ -49,7 +54,7 @@
     class="navbar flex gap-3 max-w-[1440px] mx-auto items-center justify-between sm:px-[80px] px-4 py-2"
   >
     <div class="logo sm:w-9 w-7">
-      <a href=""><img class="w-10" src="Logo.png" alt="Logo" /></a>
+      <a href=""><Image class="w-10" src={Logo} alt="Logo" /></a>
     </div>
     <button
       class="mobile-nav-toggle"

@@ -2,7 +2,9 @@
 import About from '../components/About.astro';
 import Hero from '../components/Hero.astro';
 import Navbar from '../components/Navbar.astro';
+import Hr from '../components/Hr.astro';
 import Layout from '../layouts/Layout.astro';
+import RecentProjects from '../components/RecentProjects.astro';
 
 const pageTitle = 'Sarim | Freelance web Dev';
 const pageDescription =
@@ -13,6 +15,9 @@ const pageDescription =
   <main>
     <Navbar />
     <Hero />
+    <Hr />
     <About />
+    <Hr />
+    <RecentProjects />
   </main>
 </Layout>
