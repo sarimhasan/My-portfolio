@@ -10,13 +10,6 @@ const todoDesc =
 const dictDesc = `A dictionary app built with React. It uses the Dictionary API to fetch the meaning of the word. It displaying the meaning of the word and its synonym. The UI is built with tailwindcss.`;
 const signupDesc =
   'A simple signup form built with pure HTML and CSS. It has features like form validation, error handling, and displaying the form data. It redirects to a success page after successful submission.';
-
-const row = 'row';
-const rowReverse = 'row-reverse';
-
-const todoColor = '#7FBFB3';
-const dictColor = '#FC819E';
-const signupColor = '#F9D4B7';
 ---
 
 <h1 class="text-h1 font-bold text-center max-w-[1440px] mx-auto my-10">
@@ -28,8 +21,8 @@ const signupColor = '#F9D4B7';
   description={todoDesc}
   tools={['React', 'Vite', 'React hooks', 'TailwindCSS', 'Netlify']}
   img={todoImg}
-  flexDirection={row}
-  bgColor={todoColor}
+  flexDirection="row"
+  bgColor="#7FBFB3"
 />
 
 <ProjectCard
@@ -37,15 +30,15 @@ const signupColor = '#F9D4B7';
   description={dictDesc}
   tools={['React', 'Vite', 'Dictionary API', 'TailwindCSS', 'Netlify']}
   img={dictImg}
-  flexDirection={rowReverse}
-  bgColor={dictColor}
+  flexDirection="row-reverse"
+  bgColor="#FC819E"
 />
 
 <ProjectCard
-  title="Signup Page"
+  title="Signup Form"
   description={signupDesc}
   tools={['HTML', 'CSS', 'Form Validation', 'Netlify']}
   img={singupImg}
-  flexDirection={row}
-  bgColor={signupColor}
+  flexDirection="row-reverse"
+  bgColor="#FC819E"
 />
