@@ -5,9 +5,9 @@ import { Image } from 'astro:assets';
 const { title, description, tools, img, flexDirection, bgColor } = Astro.props;
 ---
 
-<div class=`bg-[${bgColor}]`>
-  <div class=`bg-[${bgColor}] max-w-[1440px] mx-auto lg:px-[80px] px-[15px]`>
-    <div class=`md:flex gap-4 lg:gap-16 py-20 flex-${flexDirection}`>
+<div class={`bg-[${bgColor}]`}>
+  <div class={`bg-[${bgColor}] max-w-[1440px] mx-auto lg:px-[80px] px-[15px]`}>
+    <div class={`md:flex gap-4 lg:gap-16 py-20 flex-${flexDirection}`}>
       <div class="img">
         <Image src={img} alt={title} quality={'low'} />
       </div>
@@ -18,7 +18,7 @@ const { title, description, tools, img, flexDirection, bgColor } = Astro.props;
         <ul>
           {tools?.map((tool: String[]) => <li>▪️ {tool}</li>)}
         </ul>
-        <Button width="1/2">View Project</Button>
+        <Button width="full">View Project</Button>
       </div>
     </div>
   </div>
