@@ -7,7 +7,7 @@ import Hero from '../components/Hero.astro';
 import About from '../components/About.astro';
 import RecentProjects from '../components/RecentProjects.astro';
 import Testimonials from '../components/Testimonials.astro';
-import Contact from '../components/Contact.tsx';
+import Contact from '../components/Contact.jsx';
 
 const pageTitle = 'Sarim | Freelance web Dev';
 const pageDescription =
@@ -25,6 +25,6 @@ const pageDescription =
     <Hr />
     <Testimonials />
     <Hr />
-    <Contact />
+    <Contact client:load />
   </main>
 </Layout>
