@@ -41,8 +41,13 @@ function Contact() {
       </h1>
 
       <div className="max-w-[1440px] mx-auto lg:flex flex-row-reverse justify-between xl:px-20 px-4 xl:gap-8 gap-3">
-        <div className="lg:p-7 p-3 m-auto">
-          <img src={img.src} alt="todo img" width={600} className="m-auto" />
+        <div className="lg:p-7 p-3 w-full md:w-[40rem] mx-auto">
+          <h1 className="text-[40px] font-bold text-center">Say Hi to me</h1>
+          <p className="text-center">
+            Let me know more about you by filling out the form below and we can
+            hangout together sometimes 😊
+          </p>
+          <img src={img.src} alt="" />
         </div>
         <div className="lg:p-7 p-3">
           <form onSubmit={onSubmit}>
