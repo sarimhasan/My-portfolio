@@ -3,6 +3,12 @@ import { useState } from 'react';
 import img from '../assets/todo.png';
 
 function Contact() {
+  // handle checkbox change, uncheck if checked and vice versa
+  const [checked, setChecked] = useState(true);
+  const handleChange = () => {
+    setChecked(!checked);
+  };
+
   const [result, setResult] = useState('');
 
   const onSubmit = async (event) => {
@@ -76,7 +82,13 @@ function Contact() {
               rows={10}
             ></textarea>
 
-            <input type="checkbox" name="newsletter" id="newsletter" checked />
+            <input
+              type="checkbox"
+              name="newsletter"
+              id="newsletter"
+              checked={checked}
+              onChange={handleChange}
+            />
             <label htmlFor="newsletter" className="ml-3">
               Subscribe to my newsletter
             </label>
