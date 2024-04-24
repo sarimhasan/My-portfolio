@@ -1,10 +1,10 @@
 ---
-import Button from './Button.astro';
 import { Image } from 'astro:assets';
-import HeroImg from '../assets/hero.png';
+import Button from './Button.astro';
+import HeroImg from '../assets/herov2-bgremoved.png';
 ---
 
-<div class="hero-wrapper bg-accent">
+<!-- <div class="hero-wrapper bg-accent">
   <div
     class="hero max-w-[1440px] m-auto md:flex-row flex flex-col justify-center md:px-[80px] px-[15px] pt-10 gap-5 md:gap-[10rem]"
   >
@@ -12,16 +12,32 @@ import HeroImg from '../assets/hero.png';
       <p>Hi, my name is</p>
       <h1 class="text-h1 font-bold leading-[4rem]">Sarim Hasan</h1>
       <p>Freelance web developer and designer in Pakistan</p>
-      <Button width="full">Get in touch</Button>
+      <a href="#contact"><Button width="full">Get in touch</Button></a>
     </div>
 
-    <div class="img">
+    <div class="img m-auto">
+      <Image src={HeroImg} alt="sarim's pic" width={200} quality={'high'} />
+    </div>
+  </div>
+</div> -->
+<div class="bg-accent">
+  <div
+    class="md:flex md:flex-row max-w-[1440px] m-auto flex-col md:px-20 px-4 md:pt-20 md:justify-between"
+  >
+    <div class="my-auto py-3">
+      <p>Hi, my name is</p>
+      <h1 class="font-bold text-h1">Sarim Hasan</h1>
+      <p>Freelance web developer and designer in Pakistan</p>
+      <a href="#contact"><Button width="full">Get in touch</Button></a>
+    </div>
+    <div>
       <Image
         src={HeroImg}
-        alt="sarim's pic"
-        class="w-[500px]"
-        quality={'low'}
+        alt={"Sarim's image for hero section"}
+        width={500}
+        class={'h-[350px]'}
       />
+      <!-- <img src="" alt="opdsgjpiosedg" /> -->
     </div>
   </div>
 </div>
@@ -32,8 +48,5 @@ import HeroImg from '../assets/hero.png';
   }
   button:hover {
     box-shadow: 6px 6px 0px 0px #0f0f0f8f;
-  }
-  img {
-    aspect-ratio: 1;
   }
 </style>

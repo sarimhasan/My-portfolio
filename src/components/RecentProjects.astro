@@ -18,7 +18,10 @@ const dictTools = ['React', 'Vite', 'Dictionary API', 'TailwindCSS', 'Netlify'];
 const signupTools = ['HTML', 'CSS', 'Form Validation', 'Netlify'];
 ---
 
-<h1 class="text-h1 font-bold text-center max-w-[1440px] mx-auto my-10">
+<h1
+  class="text-h1 font-bold text-center max-w-[1440px] mx-auto my-10"
+  id="recent-projects"
+>
   Recent Projects
 </h1>
 
@@ -36,7 +39,9 @@ const signupTools = ['HTML', 'CSS', 'Form Validation', 'Netlify'];
       <ul>
         {todoTools.map((tool: string) => <li>▪️ {tool}</li>)}
       </ul>
-      <Button>View Project</Button>
+      <a href="https://otaat.netlify.app" target="_blank"
+        ><Button>View Project</Button></a
+      >
     </div>
   </div>
 </div>
@@ -55,7 +60,9 @@ const signupTools = ['HTML', 'CSS', 'Form Validation', 'Netlify'];
       <ul>
         {dictTools.map((tool: string) => <li>▪️ {tool}</li>)}
       </ul>
-      <Button>View Project</Button>
+      <a href="https://sarims-dict.netlify.app" target="_blank"
+        ><Button>View Project</Button></a
+      >
     </div>
   </div>
 </div>
@@ -74,7 +81,9 @@ const signupTools = ['HTML', 'CSS', 'Form Validation', 'Netlify'];
       <ul>
         {signupTools.map((tool: string) => <li>▪️ {tool}</li>)}
       </ul>
-      <Button>View Project</Button>
+      <a href="https://femnewsletter.netlify.app/" target="_blank"
+        ><Button>View Project</Button></a
+      >
     </div>
   </div>
 </div>

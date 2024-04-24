@@ -1,8 +1,6 @@
 import { useState } from 'react';
 
-import img from '../assets/todo.png';
-
-function Contact() {
+const Contact = function (props) {
   // handle checkbox change, uncheck if checked and vice versa
   const [checked, setChecked] = useState(true);
   const handleChange = () => {
@@ -35,19 +33,19 @@ function Contact() {
   };
 
   return (
-    <>
+    <div id="contact">
       <h1 className="max-w-[1440px] text-h1 font-bold text-center mx-auto">
         Contact Me
       </h1>
 
-      <div className="max-w-[1440px] mx-auto lg:flex flex-row-reverse justify-between xl:px-20 px-4 xl:gap-8 gap-3">
+      <div className="max-w-[1440px] mx-auto lg:flex flex-row-reverse justify-between xl:px-20 px-4">
         <div className="lg:p-7 p-3 w-full md:w-[40rem] mx-auto">
           <h1 className="text-[40px] font-bold text-center">Say Hi to me</h1>
           <p className="text-center">
             Let me know more about you by filling out the form below and we can
             hangout together sometimes 😊
           </p>
-          <img src={img.src} alt="" />
+          {props.children}
         </div>
         <div className="lg:p-7 p-3">
           <form onSubmit={onSubmit}>
@@ -108,8 +106,8 @@ function Contact() {
           <span>{result}</span>
         </div>
       </div>
-    </>
+    </div>
   );
-}
+};
 
 export default Contact;
