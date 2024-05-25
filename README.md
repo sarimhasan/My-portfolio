@@ -9,8 +9,16 @@ This is my portfolio site, where I showcase my projects and skills. This website
 
 ## Things to do
 
+priority: high
+
+- [ ] SEO for twitter
+- [ ] Normal SEO for google
+
+priority: medium
+
 - [ ] Add a blog section
-- [ ] Add my picture to the hero section
+- [x] Add my picture to the hero section
 - [ ] Update the fav icon
 - [x] Add a pic to the contact section
 - [x] Make the buttons work
+- [ ] smooth scrolling animation to sections
