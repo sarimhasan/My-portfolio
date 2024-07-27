@@ -1,38 +1,16 @@
 ---
-import Layout from '../layouts/Layout.astro';
 
-import Hr from '../components/Hr.astro';
-import Hero from '../components/Hero.astro';
-import About from '../components/About.astro';
-import RecentProjects from '../components/RecentProjects.astro';
-import Testimonials from '../components/Testimonials.astro';
-import Contact from '../components/Contact.jsx';
-
-import img from '../assets/contact.jpg';
-import { Image } from 'astro:assets';
-
-const pageTitle = 'Sarim | Freelance web Dev';
-const pageDescription =
-  'Freelance web developer based in Pakistan. I build fast, responsive and SEO friendly websites that are affordable and easy to manage.';
 ---
 
-<Layout title={pageTitle} description={pageDescription}>
-  <main>
-    <Hero />
-    <Hr />
-    <About />
-    <Hr />
-    <RecentProjects />
-    <Hr />
-    <Testimonials />
-    <Hr />
-    <Contact client:load>
-      <Image
-        src={img}
-        width={500}
-        alt="Sarim sitting on a computer table"
-        class={'mx-auto my-3'}
-      />
-    </Contact>
-  </main>
-</Layout>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+		<h1>Astro</h1>
+	</body>
+</html>
