@@ -1,0 +1,34 @@
+---
+import ShowWork from './ui/ShowWork.astro';
+
+const titleGMC = 'GMC Interior';
+const descriptionGMC =
+  'GMC Interior is a leading interior design firm in Karachi, with whom I recently collaborated to build a user-friendly website that showcases their elegant and bespoke projects. The website reflects their design philosophy, offering clients an engaging way to explore their services and portfolio.';
+---
+
+<div class="bg-light text-dark py-10">
+  <h2>Selected Work</h2>
+
+  <div class="max-w-5xl mx-auto">
+    <ShowWork
+      title={titleGMC}
+      description={descriptionGMC}
+      imgAddress="gmc-homepage"
+      imgAlt="A screenshot of the GMC Interior website's homepage that I developed"
+    />
+
+    <ShowWork
+      title={titleGMC}
+      description={descriptionGMC}
+      imgAddress="gmc-homepage"
+      imgAlt="A screenshot of the GMC Interior website's homepage that I developed"
+    />
+
+    <ShowWork
+      title={titleGMC}
+      description={descriptionGMC}
+      imgAddress="gmc-homepage"
+      imgAlt="A screenshot of the GMC Interior website's homepage that I developed"
+    />
+  </div>
+</div>

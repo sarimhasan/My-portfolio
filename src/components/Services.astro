@@ -1,0 +1,35 @@
+---
+import Card from './ui/Card.astro';
+
+const cardContent = [
+  {
+    title: 'Web Development',
+    description:
+      'I build modern websites using Astro and tailwind CSS, ensuring optimal performance and user-experience.',
+    description2:
+      'If you need a website to get more sales, revenue, or leads, I can help you bring your vision to life. Let’s collaborate on our next project.',
+  },
+  {
+    title: 'UX/UI Design',
+    description:
+      'I specialize in crafting intuitive and visually engaging user interfaces (UI) that deliver seamless user experiences (UX).',
+    description2:
+      'Let’s work together to design digital experiences that your users will love.',
+  },
+  {
+    title: 'Copy Writing',
+    description:
+      'I create clear and persuasive copy that attracts your audience and derives sales.',
+    description2:
+      'Let’s work together to create something that not only resonates but also delivers your message effectively.',
+  },
+];
+---
+
+<div class="bg-dark text-light">
+  <div class="max-w-[72rem] m-auto items center py-10">
+    <h2>Services</h2>
+
+    <Card cardContent={cardContent} />
+  </div>
+</div>

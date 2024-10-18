@@ -1,0 +1,51 @@
+---
+import { Image } from 'astro:assets';
+---
+
+<div class="max-w-6xl m-auto">
+  <div class="flex">
+    <div class="max-w-3xl">
+      <h2 class="text-dark my-10">About Me</h2>
+      <p>
+        So If you don't know, my name is <strong>Sarim Hasan</strong>. I live in
+        Karachi, a beautiful city in Pakistan. I’m currently 17 years old and
+        about to give my CAIE O level Exams in 2025.
+      </p>
+      <p>
+        I’m very <strong>passionate</strong> about web development and can work on
+        projects without even realizing how much time is gone.
+      </p>
+      <p>
+        My other hobbies include, <em>book reading</em>, <em>journaling</em>, <em
+          >playing chess</em
+        >, learning the <em>tafsir of Quran</em>, and sometimes <em>drawing</em
+        >. ☺️
+      </p>
+    </div>
+    <div class="m-auto py-20">
+      <Image
+        src="/images/image.png"
+        alt="An image of Sarim Hasan"
+        width={300}
+        height={300}
+        quality={'low'}
+        loading={'lazy'}
+        decoding={'async'}
+      />
+    </div>
+  </div>
+</div>
+
+<style>
+  p {
+    @apply my-4;
+  }
+
+  strong {
+    @apply text-[#6256CA];
+  }
+
+  em {
+    @apply text-[#F95454];
+  }
+</style>

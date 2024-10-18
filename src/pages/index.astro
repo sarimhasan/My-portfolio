@@ -1,6 +1,14 @@
 ---
+import './styles/global.css';
+
 import HeroSection from '../components/HeroSection.astro';
 import Navbar from '../components/ui/Navbar.astro';
+import SpecializeSection from '../components/SpecializeSection.astro';
+import Work from '../components/Work.astro';
+import Services from '../components/Services.astro';
+import AboutMe from '../components/AboutMe.astro';
+import CallToAction from '../components/CallToAction.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <html lang="en">
@@ -12,16 +20,15 @@ import Navbar from '../components/ui/Navbar.astro';
     <title>Astro</title>
   </head>
   <body>
-    <Navbar />
-    <HeroSection />
+    <div class="h-[75dvh]">
+      <Navbar />
+      <HeroSection />
+    </div>
+    <SpecializeSection />
+    <Work />
+    <Services />
+    <AboutMe />
+    <CallToAction />
+    <Footer />
   </body>
 </html>
-
-<style>
-  /* use roboto font */
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-
-  body {
-    font-family: 'Roboto', sans-serif;
-  }
-</style>

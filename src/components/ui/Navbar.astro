@@ -1,10 +1,53 @@
 <div class="flex justify-center py-4 bg-light">
-  <nav class="bg-dark inline-block text-light px-[15px] py-[6px] rounded-full">
+  <nav
+    class="bg-dark inline-block text-light px-[15px] py-[6px] rounded-full"
+    id="navbar"
+  >
     <ul class="flex gap-6">
       <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
+      <li><a href="#">Work</a></li>
       <li><a href="#">Services</a></li>
       <li><a href="#">About</a></li>
     </ul>
   </nav>
 </div>
+
+<style>
+  .sticky {
+    position: fixed;
+    top: 10px;
+
+    /* From https://css.glass */
+    background: rgba(34, 40, 49, 0.19);
+    /* border-radius: 16px; */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.4px);
+    -webkit-backdrop-filter: blur(5.4px);
+    border: 1px solid rgba(34, 40, 49, 0.09);
+
+    /* change the color of text */
+    @apply text-dark;
+  }
+</style>
+
+<script>
+  // When the user scrolls the page, execute myFunction
+  window.onscroll = function () {
+    myFunction();
+  };
+
+  // Get the navbar
+  const navbar = document.getElementById('navbar') as HTMLElement | null;
+
+  // Get the offset position of the navbar
+  const sticky = navbar ? navbar.offsetTop : 0;
+
+  // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  function myFunction() {
+    if (window.scrollY >= sticky) {
+      navbar?.classList.add('sticky');
+    } else {
+      navbar?.classList.remove('sticky');
+    }
+  }
+</script>

@@ -2,9 +2,44 @@
 import Button from '../components/ui/Button.astro';
 ---
 
-<div>
-  <h1>Sarim Hasan is a freelance Designer and an Astro Web Developer</h1>
-  <Button color="dark">
-    <a href="#">Hire Me</a>
-  </Button>
+<div class="center h-full bg-light text-dark">
+  <div>
+    <h1 class="w-[70rem]">
+      Sarim Hasan is a <span>freelance</span> Designer and an Astro <span
+        >Web Developer</span
+      >
+    </h1>
+    <div class="flex justify-center my-16 items-center">
+      <Button color="dark" href="#">See my work</Button>
+      <!-- horizontal hr between the two buttons -->
+      <div class="w-28 h-[1px] bg-dark"></div>
+      <Button color="dark" href="#">Get in touch</Button>
+    </div>
+  </div>
 </div>
+
+<style>
+  span {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+    text-decoration: none;
+  }
+  span::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    border-radius: 5px;
+    height: 0.05em;
+    bottom: 0;
+    left: 0;
+    background: currentcolor;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  span:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+</style>

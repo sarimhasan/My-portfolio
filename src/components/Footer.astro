@@ -1,0 +1,47 @@
+---
+import { Image } from 'astro:assets';
+
+import github from '/images/icons/github.png';
+import linkedin from './icons/linkedin.png';
+import twitter from './icons/twitter.png';
+
+const year = new Date().getFullYear();
+---
+
+<footer class="bg-light text-dark h-14 center">
+  <div class="flex gap-4 justify-center">
+    <div class="flex gap-4">
+      <!-- icons of twitter and github -->
+      <Image
+        src="/images/icons/twitter.png"
+        width={25}
+        height={1}
+        alt="twitter or X icon"
+      />
+      <Image
+        src="/images/icons/github.png"
+        width={32}
+        height={32}
+        alt="youtube icon"
+      />
+    </div>
+    <div>
+      <p>&copy; {year} - Sarim Hasan</p>
+    </div>
+    <div class="flex gap-4">
+      <!-- icons of linkedin and youtube -->
+      <Image
+        src="/images/icons/linkedin.png"
+        width={32}
+        height={32}
+        alt="linkedin icon"
+      />
+      <Image
+        src="/images/icons/youtube.png"
+        width={32}
+        height={32}
+        alt="youtube icon"
+      />
+    </div>
+  </div>
+</footer>

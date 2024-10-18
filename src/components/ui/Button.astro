@@ -1,11 +1,19 @@
 ---
 export interface Props {
-  color?: string;
+  color: string;
+  href: string;
 }
 
-const { color } = Astro.props;
+const { color, href } = Astro.props;
+
+let btnText = '';
+if (color === 'light') {
+  btnText = 'dark';
+} else {
+  btnText = 'light';
+}
 ---
 
-<button class=`bg-${color}`>
-  <slot />
+<button class=`bg-${color} px-3 py-1 rounded-full text-light text-[20px]`>
+  <a class=`text-${btnText}` href=`${href}`><slot /></a>
 </button>
